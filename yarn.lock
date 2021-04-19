@@ -6102,6 +6102,11 @@ performance-now@^2.1.0:
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
 
+phoenixjs@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/phoenixjs/-/phoenixjs-1.0.5.tgz#d45f4baaa3b0ea2cfbbc5af60851000a6303239f"
+  integrity sha1-1F9LqqOw6iz7vFr2CFEACmMDI58=
+
 picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.2.3.tgz#465547f359ccc206d3c48e46a1bcb89bf7ee619d"
