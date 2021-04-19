@@ -50,7 +50,17 @@ export default {
       .receive("error", (resp) => {
         console.log("Unable to join", resp);
       });
+
+    channel.on("new_msg", payload => {
+      console.log("new_msg", payload)
+})
+
+
   },
+  computed: {
+
+
+  }
 };
 </script>
 
