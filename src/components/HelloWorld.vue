@@ -39,9 +39,10 @@ export default {
     msg: String,
   },
   created() {
-    var socket = new Socket("ws://" + "localhost:4000" + "/socket");
+    var token = "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhYmlsaXRpZXMiOltdLCJhdWQiOiI5MGQiLCJleHAiOjE2MjE0MjYxMzEsImlhdCI6MTYxOTAwNjkzMSwiaXNzIjoiOTBkIiwianRpIjoiZDExZjUyYTUtODk3NS00MDE3LTkyNzQtYzliZGFiOTQwMTU2IiwibmJmIjoxNjE5MDA2OTMwLCJyb2xlcyI6WyJzdXBlcmFkbWluIl0sInN1YiI6IjEiLCJ0eXAiOiJhY2Nlc3MifQ.u2OO4aLfFGqLREnjI8yiTntHkiE9oEhVJ6kRQWMF_mw_891li9c2H60EOA4o2hzKjLuN2OkjOoVhjrPk_hFj8w"
+    var socket = new Socket("ws://" + "localhost:4000" + "/socket",{params: {token: token}});
     socket.connect();
-    let channel = socket.channel("room:lobby", {});
+    let channel = socket.channel("notifications:1", {});
     channel
       .join()
       .receive("ok", (resp) => {
